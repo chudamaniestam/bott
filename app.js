@@ -3,7 +3,7 @@ var app=express();
 var port = process.env.PORT||3001;
 
 app.post('/endpoint',function(req,res){
-	console.log(req.body);
+	console.log(req);
 	res.send('endpoint creation');
 });
 
